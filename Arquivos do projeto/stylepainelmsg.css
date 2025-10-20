@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  background-color: #111111;
+  color: #00ffff;
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #0099ff;
+  padding: 0 20px;
+  background-color: #111;
+  height: 50px;
+}
+
+.glow {
+  color: #0099ff;
+  text-shadow: 0 0 5px #0099ff,
+               0 0 10px #0099ff,
+               0 0 20px #0099ff,
+               0 0 40px #0099ff;
+  box-shadow: 0 0 5px #0099ff,
+              0 0 10px #0099ff,
+              0 0 20px #0099ff,
+              0 0 40px #0099ff;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: larger;
+}
+
+.profile-image  {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.profile-image:hover {
+  content: url(images/sonic.gif);
+}
+
+.mainpage {
+  display: flex;
+  height: calc(100vh - 50px);
+  background-color: #111;
+}
+
+.side-main {
+  position: relative;
+  flex: 1;
+  max-width: 35vw;
+  background-color: #000;
+  border-right: 1px solid #0099ff;
+  padding: 20px;
+  box-shadow: inset -5px 0 10px #00ffff44;
+  overflow-y: auto;
+}
+
+.side-main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-main li {
+  margin-bottom: 20px;
+}
+
+/* estilo dos links e summary (iguais) */
+.side-main li a,
+.side-main li summary {
+  text-decoration: none;
+  color: #0099ff;
+  padding: 10px 25px;
+  display: block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.side-main li a:hover,
+.side-main li summary:hover {
+  background-color: #0099ff22;
+  color: #0099ff;
+}
+
+/* remove setinha feia do summary */
+.side-main li summary::-webkit-details-marker {
+  display: none;
+}
+
+/* submenu (indentado dentro do details) */
+.side-main .menu-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  border-left: 2px solid #0099ff55;
+  padding-left: 10px;
+}
+
+.side-main .menu-content a {
+  text-decoration: none;
+  color: #00ffff;
+  padding: 8px 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.side-main .menu-content a:hover {
+  background-color: #0099ff22;
+  text-shadow: 0 0 5px #00ffff,
+               0 0 10px #00ffff;
+}
+
+.glow-img {
+  height: 250px;
+  width: auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 5px #0099ff)
+          drop-shadow(0 0 10px #0099ff)
+          drop-shadow(0 0 20px #0099ff);
+}
+
+.side-main {
+  position: relative;
+}
+
+.decor-img {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 380px;
+  width: auto;
+  filter: drop-shadow(0 0 5px #0099ff)
+          drop-shadow(0 0 10px #0099ff)
+          drop-shadow(0 0 20px #0099ff);
+  opacity: 0.9;
+}
+
+main {
+  flex: 1;
+  padding: 30px;
+  color:#0099ff ;
+  overflow-y: auto;
+  font-size: 16px;
+}
