@@ -48,6 +48,7 @@ $nomeUsuario = $_SESSION['nome'];
       <div class="console">
 
         <p>Bem-vindo ao sistema, <?php echo htmlspecialchars($nomeUsuario); ?>.</p>
+          <!-- <a> para abrir o painel adm, apenas fins de teste -->
         <a href="paineladmin.php">Adm</a>
         <a href="gerenciamentoLab1.php">Adm</a>
 
@@ -58,3 +59,4 @@ $nomeUsuario = $_SESSION['nome'];
 
 </body>
 </html>
+
